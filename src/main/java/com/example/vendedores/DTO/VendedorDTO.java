@@ -1,9 +1,11 @@
 package com.example.vendedores.DTO;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import lombok.Data;
 
 @Data
-public class VendedorDTO {
+public class VendedorDTO extends RepresentationModel<VendedorDTO>{
     private Integer idVendedor;
     private Integer idUsuario;
     private String nombreCompleto;
